@@ -30,4 +30,4 @@ Syed Mustafa Hashmi
 4. Open mensproduct>index.html > open with live server
 5. View in browser
 
-# 6.Project live:
+# 6.Project live: https://asosclonehtml.netlify.app/
