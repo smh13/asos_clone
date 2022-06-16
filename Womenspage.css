@@ -1,0 +1,343 @@
+body{
+    margin: 0px;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: #2d2d2d;
+    font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+  
+}
+.left{
+    display: flex;
+   
+}
+.left>.logo{
+    width: 200px;
+    height: 78px;
+    border: 1px solid rgb(94, 93, 93);
+    text-align: center;
+    font-size: 30px;
+    background-color: #2d2d2d;
+}
+.left>.logo:hover{
+    cursor: pointer;
+    background-color: #525050;
+ }
+.logo>h1{
+    margin-top: 0px;
+    font-family: futura-pt, sans-serif;
+    color: white;
+}
+.left>.women{
+    width: 150px;
+    height: 80px;
+    border: 1px solid transparent;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #525050;
+}
+.p1{
+    margin-top: 20px;
+}
+.p1:hover{
+   color: white;
+}
+.alink1{
+   color: white;
+   text-decoration: solid;
+
+}
+.left>.women:hover{
+   cursor: pointer;
+   background-color: #525050;
+}
+.left>.men{
+    width: 150px;
+    height: 80px;
+    border: 1px solid transparent;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+   
+}
+.left>.men:hover{
+    cursor: pointer;
+    background-color: #525050;
+ }
+
+.middle>input{
+    padding: 15px 280px;
+    border-radius: 30px;
+    margin-left: 8px;
+    margin-top: 15px;
+
+}
+.right{
+    width: 400px;
+    /* background-color: red; */
+    display: flex;
+}
+.right>i{
+   padding: 15px;
+   font-size: 30px;
+   margin-left: 10px;
+   margin-top: 10px;
+   color: white;
+}
+.right>i:hover{
+    cursor: pointer;
+}
+.header2{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color:#525050 ;
+    font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+}
+.header2>button{
+     padding: 15px 20px;
+     background-color:#525050 ;
+     border: transparent;
+     color: whitesmoke;
+     font-weight: bold;
+}
+.header2>button:hover{
+    background-color: whitesmoke;
+    color: black;
+
+    
+}
+.header2>button:nth-child(1){
+   margin-left: 25px;
+   background-color:#d01345 ;
+}
+.header2>button:nth-child(10){
+    background-color: #d01345;
+ }
+ .header3{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    text-align: center;
+    font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+}
+.header3:hover{
+    cursor: pointer;
+}
+.header3>div:nth-child(1){
+    width: 50%;
+    background-color:  #26e066;
+    font-size: 13px;
+    font-weight: bold;   
+}
+.header3>div:nth-child(1)>p:nth-child(1){
+   margin-top: 2px;
+}
+.header3>div:nth-child(2){
+    width: 50%;
+    background-color:  #9447ff;  
+    font-weight: bold;
+    color: white;
+}
+.header3>div:nth-child(2)>p:nth-child(1){
+    margin-top: 5px;
+ }
+ .nav{
+     width: 100%;
+     height: 60px;
+     display: flex; 
+ }
+ .nav>p{
+   margin-left: 10px;
+}
+.nav>p:hover{
+  color: gray;
+  cursor: pointer;
+ }
+ #li{
+     margin-top: 4px;
+     margin-left: 15px; 
+ }
+ #productHead {
+    width: 370px;
+    margin-left: 40%;
+    height: 60px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid rgb(170, 167, 167);
+    text-align: left;
+    margin: left;
+}
+
+#productHead>h1 {
+    margin: 8px;
+
+}
+
+#buttonDivs {
+    width: 95%;
+    height: 60px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid rgb(170, 167, 167);
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.selectBtn {
+    padding: 10px 15px;
+    margin-right: 2%;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: none;
+    margin-top: 5px;
+
+}
+
+.clearBtn {
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: transparent;
+    margin-top: 5px;
+    border: 1px solid gray;
+}
+
+.clearBtn:hover {
+    background-color: rgb(221, 216, 216);
+}
+
+.selectBtn:hover {
+    background-color: rgb(221, 216, 216);
+}
+
+#productDisplay {
+    width: 93%;
+    border: 1px solid transparent;
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+}
+
+#products>div {
+    border: 1px solid transparent;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+img {
+    width: 100%;
+    height: 350px;
+}
+
+h3 {
+    padding-left: 2%;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    font-size: 18px;
+}
+
+p {
+    padding-left: 2%;
+    margin-top: 0%;
+    margin-bottom: 1%;
+}
+
+p:hover {
+    color: red;
+}
+
+#bag {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid rgb(173, 170, 170);
+}
+
+#bag:hover {
+    color: white;
+    cursor: pointer;
+    background-color: blue;
+}
+
+
+/* products css ends here */
+@media only screen and (min-width: 421px) and (max-width: 768px) {
+    #productDisplay {
+        width: 93%;
+        border: 1px solid transparent;
+        margin: auto;
+        margin-top: 10px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+    }
+
+    #buttonDivs {
+        width: 95%;
+        height: 110px;
+        border: 1px solid transparent;
+        border-bottom: 1px solid rgb(170, 167, 167);
+        text-align: left;
+        margin: auto;
+        margin-top: 15px;
+    }
+}
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+    #productDisplay {
+        width: 93%;
+        border: 1px solid transparent;
+        margin: auto;
+        margin-top: 10px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+    }
+
+    #buttonDivs {
+        width: 95%;
+        height: 170px;
+        border: 1px solid transparent;
+        border-bottom: 1px solid rgb(170, 167, 167);
+        text-align: left;
+        margin: auto;
+        margin-top: 15px;
+    }
+}
+
+.footer{
+    width: 100%;
+    height: 250px;
+    margin-top: 80px;
+    display: flex;
+    background-color: #eeeeee;
+}
+.footer>div{
+    width: 25%;
+    height: 100%;
+
+}
+.footer>div>h3{
+    color:  #666666;
+    margin-left: 10px;
+}
+.footp{
+    color:#464141 ;
+    margin-left: 10px;
+    }
+.footp:hover{
+    cursor: pointer;
+    color: blue;
+}
