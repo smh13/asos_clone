@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Product detials page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="Womentsproductdetials.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/f7879b5792.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+    <div class="header">
+        <div class="left">
+            <div class="logo"> <h1>asos</h1></div>
+            <div class="women"><a class="alink1" href="http://127.0.0.1:5500/womensproductpage/women.html"><p>Women</p></a></div>
+            <div class="men"><a  class="alink1" href="http://127.0.0.1:5500/mensproductpage/Mens.html"><p class="p1">Men</p></a></div>
+        </div>
+     <div class="middle">
+         <input type="text" placeholder="Search for items and Brands">
+     </div>
+     <div class="right">
+         <i  class="far fa-user"></i>
+         <i  class="far fa-heart"></i>
+         <i class="fas fa-shopping-bag"></i>
+     </div>
+ </div>
+ <!-- header2 start -->
+ <div class="header2">
+         <button>Sale</button>
+         <button>New in</button>
+         <button>Clothing</button>
+         <button>Shoes</button>
+         <button>SportWear</button>
+         <button>Accessories</button>
+         <button>Trending Now</button>
+         <button>Topman</button>
+         <button>Face + Body</button>
+         <button>Brands</button>
+         <button>Outlet</button>
+         <button>Marketplace</button>
+ </div>
+ <div class="header3">
+     <div>
+         <p>GET 25% OFF EVERYTHING!*</p>
+         <p>With Code:SAVES</p>
+         <p>OUR JANUARY TREAT FOR YOU...</p> 
+     </div>
+     <div>
+         <p>UP TO 50% OFF</p>
+         <p>CHILED-OUT LOOKS!</p>
+     </div>
+ </div>
+  <div class="nav">
+      <p>Home</p>
+      <i id="li" class="fas fa-angle-right"></i>
+      <p>Womens</p>
+      <i id="li" class="fas fa-angle-right"></i>
+      <p>Party Wear</p>
+  </div>
+    <div class="container">
+
+    </div>
+    <div class="footer">
+        <div>
+            <h3>HELP & INFORMATION</h3>
+            <p class="footp">Help</p>
+            <p class="footp">Track order</p>
+            <p class="footp">Delivery & returns</p>
+        </div>
+        <div>
+            <h3>ABOUT ASOS</h3>
+            <p class="footp">About us</p>
+            <p class="footp">Careers at ASOS</p>
+            <p class="footp">Corporate responsibility</p>
+            <p class="footp">Investor's site</p>
+        </div>
+        <div>
+            <h3>MORE FROM ASOS</h3>
+            <p class="footp">Mobile and ASOS apps</p>
+            <p class="footp">ASOS Marketplace</p>
+            <p class="footp">Gift vouchers</p>
+            <p class="footp">Black Friday</p>
+        </div>
+        <div>
+            <h3>SHOPPING FROM:</h3>
+            <p class="footp">CHANGE</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    var womensProduct = JSON.parse(localStorage.getItem("productDetails"));
+    //console.log(mensProduct);
+    var bagProducts = JSON.parse(localStorage.getItem("bagProducts")) || [];
+
+    displayProducts(womensProduct)
+
+    function displayProducts(elem) {
+        womensProduct.filter(function (elem) {
+            var div1 = document.createElement("div");
+            div1.setAttribute("class", "imgCont")
+            var img = document.createElement("img");
+            img.setAttribute("src", elem.imgUrl);
+
+            var div2 = document.createElement("div");
+            div2.setAttribute("class", "desCont");
+            var name = document.createElement("h1");
+            name.textContent = elem.name;
+            name.setAttribute("id", "name")
+            var color = document.createElement("p");
+            color.textContent = elem.color;
+            color.setAttribute("id", "color")
+            var price = document.createElement("h2");
+            price.textContent = elem.Price;
+            price.setAttribute("id", "price")
+            var paraDes = document.createElement("p");
+            paraDes.textContent = "(Inclusive of all taxes)";
+            paraDes.setAttribute("id", "parades")
+            var size = document.createElement("p");
+            size.textContent = "Select Size";
+            size.setAttribute("id", "size")
+
+
+            //product description Box - size details
+            var SizeBtnLabel = document.createElement("div");
+            SizeBtnLabel.setAttribute("class", "sizeButtonlbl");
+            // description Box - size button
+            var SizeBtnOne = document.createElement("button");
+            SizeBtnOne.setAttribute("class", "sizeButton");
+            SizeBtnOne.textContent = elem.size[0];
+            SizeBtnOne.onclick = function () {
+                selectSize(SizeBtnOne, SizeBtnTwo,
+                    SizeBtnThree, SizeBtnFour);
+            }
+            // description Box - size button
+            var SizeBtnTwo = document.createElement("button");
+            SizeBtnTwo.setAttribute("class", "sizeButton");
+            SizeBtnTwo.textContent = elem.size[1];
+            SizeBtnTwo.onclick = function () {
+                selectSize(SizeBtnTwo, SizeBtnOne,
+                    SizeBtnThree, SizeBtnFour);
+            }
+            // description Box - size button
+            var SizeBtnThree = document.createElement("button");
+            SizeBtnThree.setAttribute("class", "sizeButton");
+            SizeBtnThree.textContent = elem.size[2];
+            SizeBtnThree.onclick = function () {
+                selectSize(SizeBtnThree, SizeBtnOne,
+                    SizeBtnTwo, SizeBtnFour);
+            }
+            // description Box - size button
+            var SizeBtnFour = document.createElement("button");
+            SizeBtnFour.setAttribute("class", "sizeButton");
+            SizeBtnFour.textContent = elem.size[3];
+            SizeBtnFour.onclick = function () {
+                selectSize(SizeBtnFour, SizeBtnOne,
+                    SizeBtnTwo, SizeBtnThree);
+            }
+
+
+            var breakLine = document.createElement("br");
+            var addtobagBtn = document.createElement("button");
+            addtobagBtn.textContent = "Add To Bag";
+            addtobagBtn.setAttribute("id", "bag");
+            addtobagBtn.addEventListener("click", function () {
+                addtobag(elem)
+            });
+            var buynowBtn = document.createElement("button");
+            buynowBtn.textContent = "Buy Now";
+            buynowBtn.setAttribute("id", "buy");
+            buynowBtn.addEventListener('click', function () {
+                window.location.href = "http://127.0.0.1:5500/sign%20in%20page/signin.html"
+            })
+            var details = document.createElement("p");
+            details.textContent = "Free Deleivery and Return";
+            details.setAttribute("id", "delDetails")
+
+            SizeBtnLabel.append(SizeBtnOne, SizeBtnTwo, SizeBtnThree, SizeBtnFour);
+            div1.append(img);
+            div2.append(name, color, price, paraDes, size, SizeBtnLabel, addtobagBtn, breakLine, buynowBtn, details);
+
+            document.querySelector(".container").append(div1, div2)
+
+        });
+
+    }
+
+    function addtobag(elem) {
+        bagProducts.push(elem);
+        alert("Your Product added to bag succesfully");
+        localStorage.setItem("bagProducts", JSON.stringify(bagProducts))
+    }
+
+    var btnCount = 0;
+    function selectSize(p, a, b, c) {
+
+        p.setAttribute("class", "sizeButtonClicked");
+        a.setAttribute("class", "sizeButton");
+        b.setAttribute("class", "sizeButton");
+        c.setAttribute("class", "sizeButton");
+
+        var sizeArr = womensProduct.filter(function (el) {
+            // if(el.size == p.textContent){
+            el.size = p.textContent;
+            // console.log(el.size);
+            btnCount++;
+            // }
+        });
+
+        displayProducts(sizeArr);
+    }
+
+    function backtopage() {
+        window.location.href = "C:\Users\Kamesh\Desktop\asos project\womensproductpage\Womenspage.html"
+    }
+
+    function backtohome() {
+        window.location.href = ""
+    }
+
+</script>

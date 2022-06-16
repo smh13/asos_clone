@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Women's Clothings</title>
+    <link rel="stylesheet" href="Womenspage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f7879b5792.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="left">
+            <div class="logo"> <h1>asos</h1></div>
+            <div class="women"><a class="alink1" href="http://127.0.0.1:5500/womenpage/women.html"><p class="p1">Women</p></a></div>
+            <div class="men"><a  class="alink1" href="http://127.0.0.1:5500/mensproductpage/Mens.html"><p class="p1">Men</p></a></div>
+        </div>
+     <div class="middle">
+         <input type="text" placeholder="Search for items and Brands">
+     </div>
+     <div class="right">
+         <i  class="far fa-user"></i>
+         <i  class="far fa-heart"></i>
+         <i class="fas fa-shopping-bag"></i>
+     </div>
+ </div>
+ <!-- header2 start -->
+ <div class="header2">
+         <button>Sale</button>
+         <button>New in</button>
+         <button>Clothing</button>
+         <button>Shoes</button>
+         <button>SportWear</button>
+         <button>Accessories</button>
+         <button>Trending Now</button>
+         <button>Topman</button>
+         <button>Face + Body</button>
+         <button>Brands</button>
+         <button>Outlet</button>
+         <button>Marketplace</button>
+ </div>
+ <div class="header3">
+     <div>
+         <p>GET 25% OFF EVERYTHING!*</p>
+         <p>With Code:SAVES</p>
+         <p>OUR JANUARY TREAT FOR YOU...</p> 
+     </div>
+     <div>
+         <p>UP TO 50% OFF</p>
+         <p>CHILED-OUT LOOKS!</p>
+     </div>
+ </div>
+  <div class="nav">
+      <p>Home</p>
+      <i id="li" class="fas fa-angle-right"></i>
+      <p>womens</p>
+      <i id="li" class="fas fa-angle-right"></i>
+      <p>Party Wear</p>
+  </div>
+
+  
+    <!-- //products section starts from here -->
+    <div id="productHead">
+        <h1 id="bagcount"></h1>
+    </div>
+
+
+    <div id="buttonDivs">
+        <select name="categories" id="categoriesBtn" onchange="filtercategory()" class="selectBtn">
+            <option value="">categories</option>
+            <option value="Top">Top</option>
+            <option value="Trousers">Trousers</option>
+            <option value="Jacket">Jackets</option>
+            <option value="Socks">Socks</option>
+            <option value="Shorts">Shorts</option>
+            <option value="Shoe">Shoe</option>
+            <option value="SportsBra">SportsBra</option>
+        </select>
+        <select name="Brand" id="brand" onchange="filterbrand()" class="selectBtn">
+            <option value="">Brand</option>
+            <option value="Jordon">Jordon</option>
+            <option value="NikeLab">NikeLab</option>
+            <option value="NikePro">NikePro</option>
+        </select>
+        <select name="Size" id="size" onchange="filtercolor()" class="selectBtn">
+            <option value="">color</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="White">White</option>
+            <option value="Gray">Gray</option>
+            <option value="Black">Black</option>
+        </select>
+        <select name="Price" id="price" onchange="sortPrice()" class="selectBtn">
+            <option value="">Price</option>
+            <option value="Low">Low To High</option>
+            <option value="High">High To Low</option>
+        </select>
+        <button onclick="clearAll()" class="clearBtn">Clear</button>
+    </div>
+
+    <div id="productDisplay">
+        <!-- <div></div>
+        <div></div>
+        <div></div>
+        <div></div> -->
+    </div>
+    <div class="footer">
+        <div>
+            <h3>HELP & INFORMATION</h3>
+            <p class="footp">Help</p>
+            <p class="footp">Track order</p>
+            <p class="footp">Delivery & returns</p>
+        </div>
+        <div>
+            <h3>ABOUT ASOS</h3>
+            <p class="footp">About us</p>
+            <p class="footp">Careers at ASOS</p>
+            <p class="footp">Corporate responsibility</p>
+            <p class="footp">Investor's site</p>
+        </div>
+        <div>
+            <h3>MORE FROM ASOS</h3>
+            <p class="footp">Mobile and ASOS apps</p>
+            <p class="footp">ASOS Marketplace</p>
+            <p class="footp">Gift vouchers</p>
+            <p class="footp">Black Friday</p>
+        </div>
+        <div>
+            <h3>SHOPPING FROM:</h3>
+            <p class="footp">CHANGE</p>
+        </div>
+    </div>
+
+   
+</body>
+
+
+</html>
+<script src="https://kit.fontawesome.com/3347d6e76d.js" crossorigin="anonymous"></script>
+<script>
+
+    // product datas
+    var products = [
+        {
+            imgUrl: "https://images.unsplash.com/photo-1606902965551-dce093cda6e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BvcnRzJTIwYnJhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            name: "ASOS Sports Bra",
+            category: "SportsBra",
+            brand: "Jordon",
+            color: "White",
+            Price:  50.00,
+            size: ["S", "M", "L", "XL"]
+        },
+
+
+
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a7f68ae6-59c4-4ed9-a725-00ecec16ff68/pro-365-13cm-shorts-Xtrrs6.png",
+            name: "ASOS new shorts",
+            category: "Shorts",
+            brand: "Jordon",
+            color: "Black",
+            Price: 20,
+            size: ["S", "M", "L", "XL"]
+        },
+        {
+            imgUrl: "https://images.unsplash.com/photo-1620138546344-7b2c38516edf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODV8fHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            name: "New Air Max Pre-Day",
+            category: "Shoe",
+            color: "Blue",
+            Price: 40,
+            size: [6, 7, 8, 9, 10],
+        },
+        {
+            imgUrl: "https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+            name: " Flex Run 2021",
+            category: "Shoe",
+            color: "Red",
+            Price: 40,
+            size: [6, 7, 8, 9, 10],
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d263149f-fbaf-4c9d-88ca-4a1ebe6c420f/sportswear-icon-clash-woven-wide-leg-trousers-shCw2G.png",
+            name: "ASOS Morder Girl's pants",
+            category: "Trousers",
+            brand: "Jordon",
+            color: "White",
+            Price: 30,
+            size: ["S", "M", "L", "XL"]
+        },
+
+        {
+            imgUrl: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            name: "New Air Max AP",
+            category: "Shoe",
+            color: "Pink",
+            Price: 45,
+            size: [6, 7, 8, 9, 10],
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/30c34ec4-f51e-442a-aa68-c85f4a4e79ac/dri-fit-swoosh-icon-clash-support-1-piece-pad-printed-sports-bra-qd2H1j.png",
+            name: "ASOS Sports Bra",
+            category: "SportsBra",
+            brand: "Jordon",
+            color: "Gray",
+            Price: 40,
+            size: ["S", "M", "L", "XL"]
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/37d58ae7-b41b-4adc-9b0c-28bc827db057/sportswear-icon-clash-mock-long-sleeve-top-TlH8QM.png",
+            name: "ASOS girl's  Tops",
+            category: "Top",
+            brand: "NikePro",
+            color: "Blue",
+            Price: 60,
+            size: ["S", "M", "L", "XL"]
+        },
+        {
+            imgUrl: "https://images.unsplash.com/photo-1562183241-b937e95585b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            name: "New Legacy Serena Design Crew",
+            category: "Shoe",
+            color: "Cream",
+            Price: 60,
+            size: [6, 7, 8, 9, 10],
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7df7e2e9-d4f0-4e5a-9884-c5d0f561f8b2/swoosh-ultrabreathe-support-padded-sports-bra-GX5mln.png",
+            name: "ASOS Swoosh UltraBreathe",
+            category: "SportsBra",
+            brand: "Jordon",
+            color: "Cream",
+            Price: 60,
+            size: ["S", "M", "L", "XL"]
+        },
+        {
+            imgUrl: "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            name: "Aqua Rift",
+            category: "Shoe",
+            color: "White",
+            Price: 50,
+            size: [6, 7, 8, 9, 10],
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a887d100-9f0b-40d1-8def-7a11824f2f8b/sportswear-woven-trousers-5SNDjM.png",
+            name: "ASOS Morder Girl's pants",
+            category: "Trousers",
+            brand: "Jordon",
+            color: "Blue",
+            Price: 25,
+            size: ["S", "M", "L", "XL"]
+        },
+        {
+            imgUrl: "https://images.unsplash.com/photo-1554735490-5974588cbc4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            name: "Air Force 1 Fontanka",
+            category: "Shoe",
+            color: "Cream",
+            Price: 50,
+            size: [6, 7, 8, 9, 10],
+        },
+        {
+            imgUrl: "https://images.unsplash.com/photo-1602033693387-3531914e7185?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            name: " Air Force 1 Pixel",
+            category: "Shoe",
+            color: "Olive",
+            Price: 45,
+            size: [6, 7, 8, 9, 10],
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ccca2586-358d-46a2-850f-8b5aab8b62c2/air-velour-jacket-dvCWBC.png",
+            name: "ASOS New Jacket",
+            category: "Jacket",
+            brand: "NikeLab",
+            color: "Cream",
+            Price: 20,
+            size: ["S", "M", "L", "XL"]
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fd15d125-76ca-441d-8b6a-57c0a081116a/dri-fit-one-mid-rise-printed-leggings-NkRcqk.png",
+            name:"ASOS Morder Girl's pants",
+            category: "Trousers",
+            brand: "NikeLab",
+            color: "Brown",
+            Price: 40,
+            size: ["S", "M", "L", "XL"]
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/05a53af7-c641-43e4-805b-c7f89e569fb0/air-velour-mid-rise-trousers-6lgdlP.png",
+            name: "ASOS Morder Girl's pants",
+            category: "Trousers",
+            color: "Brown",
+            Price: 45,
+            size: ["S", "M", "L", "XL"]
+        },
+        {
+            imgUrl: "https://images.unsplash.com/photo-1604671801908-6f0c6a092c05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            name: "ASOS Zoom Fly 4",
+            category: "Shoe",
+            color: "Black",
+            Price: 30,
+            size: [6, 7, 8, 9, 10],
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d4d3a055-d6e8-40c7-8cdc-f9e421008a44/10k-2-in-1-running-shorts-QBd76d.png",
+            name: "girl's shorts",
+            category: "Shorts",
+            brand: "NikeLab",
+            color: "Black",
+            Price: 22,
+            size: ["S", "M", "L", "XL"]
+        },
+        {
+            imgUrl: "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTR8fHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            name: "New Dunk High LX",
+            category: "Shoe",
+            color: "Cream",
+            Price: 40,
+            size: [6, 7, 8, 9, 10],
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/70a0f845-1f2e-433e-b2b5-11455817442f/jordan-heritage-t-shirt-4nJvCx.png",
+            name: "ASOS girl's  Tops",
+            category: "Top",
+            brand: "NikeLab",
+            color: "Blue",
+            Price: 55,
+            size: ["S", "M", "L", "XL"]
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/aee896ce-0062-42bd-bfad-4ae4ab086219/swoosh-run-running-jacket-N6QMRT.png",
+            name: "ASOS Swoosh Run",
+            category: "Jacket",
+            brand: "NikeLab",
+            color: "Olive",
+            Price: 40,
+            size: ["S", "M", "L", "XL"]
+        },
+        {
+            imgUrl: "https://images.unsplash.com/photo-1603808033587-935942847de4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njd8fHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            name: "girls Dunk",
+            category: "Shoe",
+            color: "White",
+            Price: "50",
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/64a37e1a-69b2-4f55-8189-6cfe94158324/dri-fit-indy-light-support-padded-v-neck-sports-bra-P6hxlh.png",
+            name: "ASOS Sports Bra",
+            category: "SportsBra",
+            brand: "NikePro",
+            color: "Blue",
+            Price: 45,
+            size: ["S", "M", "L", "XL"]
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/abea3bf7-0dc8-4f4f-aff1-02e7e3b6b369/jordan-new-classics-capsule-2-top-KRJqcx.png",
+            name: "Jordan New Classics Capsule 2.0",
+            category: "Jacket",
+            brand: "NikePro",
+            color: "Black",
+            Price: 45,
+            size: ["S", "M", "L", "XL"]
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5d4f847a-9877-4b71-99b4-4554c4246c6d/jordan-fleece-all-over-printed-trousers-5sfqN3.png",
+            name: "Women's Fleece All-over Printed",
+            category: "Trousers",
+            color: "Red",
+            Price: 30,
+            size: ["S", "M", "L", "XL"]
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7daa139d-91eb-43f2-a9b8-fb8cd81607bd/sportswear-boxy-t-shirt-GNXQld.png",
+            name: "ASOS girl's  Tops",
+            brand: "NikePro",
+            category: "Top",
+            color: "White",
+            Price: 35,
+            size: ["S", "M", "L", "XL"]
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9f1978b5-1115-406d-ac3a-236c54e8be8a/sportswear-crew-Rk7hCz.png",
+            name: "ASOS girl's  Tops",
+            category: "Top",
+            brand: "NikePro",
+            color: "Lavender",
+            Price: 45,
+            size: ["S", "M", "L", "XL"]
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/gffibzzmtmhe5ldjkiwv/everyday-lightweight-training-ankle-socks-ShtJfk.png",
+            name: "ASOS sock's",
+            category: "Socks",
+            color: "Black",
+            Price: "20",
+
+        },
+        {
+            imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/22535aa1-9c51-48f1-bca3-e584dd26a02c/air-everyday-plus-lightweight-training-no-show-socks-GFxTKh.png",
+            name: " Everyday Plus Lightweight",
+            category: "Socks",
+            color: "Gray",
+            Price: 25,
+
+        },
+    ]
+    //  moving datas to local storage   
+    localStorage.setItem("Women's Products", JSON.stringify(products));
+    document.querySelector("#bagcount").textContent = "Women's Clothing" + " " ;
+    displayItem(products)
+    // this function will clear all the filtered item to back its original position    
+    function clearAll() {
+        location.reload();
+    }
+    //it will filter category section
+    function filtercategory() {
+        var categoryselected = document.querySelector('#categoriesBtn').value;
+
+        var newproduct = products.filter(function (elem) {
+            return elem.category == categoryselected;
+        });
+        displayItem(newproduct);
+    }
+    //this function will filter by color
+    function filtercolor() {
+        var categoryselected = document.querySelector('#size').value;
+
+        var newproduct = products.filter(function (elem) {
+            return elem.color == categoryselected;
+        });
+        console.log(newproduct)
+        displayItem(newproduct);
+    }
+    //this function will filter brand.
+    function filterbrand() {
+        var categoryselected = document.querySelector('#brand').value;
+
+        var newproduct = products.filter(function (elem) {
+            return elem.brand == categoryselected;
+        });
+        //console.log(newproduct)
+        displayItem(newproduct);
+    }
+
+    //this will sort price
+    function sortPrice() {
+        //console.log("Here")
+        var selected = document.querySelector("#price").value;
+        //console.log(selected)
+        if (selected == "Low")
+            products.sort(function (a, b) {
+                return a.Price - b.Price
+            })
+        //console.log(products)
+        if (selected == "High")
+            products.sort(function (a, b) {
+                return b.Price - a.Price
+            })
+        displayItem(products)
+    }
+
+    //this function display the products in the webpage
+
+    function displayItem(products) {
+
+        document.querySelector("#productDisplay").textContent = "";
+        products.map(function (elem) {
+
+            var div = document.createElement("div");
+            div.addEventListener("click", showprod);
+            var image = document.createElement("img");
+            image.setAttribute("src", elem.imgUrl);
+            var name = document.createElement("h3");
+            name.textContent = elem.name;
+            var color = document.createElement("p");
+            color.textContent = "1 color";
+            color.addEventListener("click", showcolor);
+
+            function showcolor(event) {
+                //console.log("here");
+                color.textContent = elem.color;
+            }
+
+
+
+            var price = document.createElement("h3");
+            price.textContent = "$" + elem.Price;
+
+            document.querySelector("#productDisplay").append(div);
+            div.append(image, name, color, price)
+            function showprod(event) {
+                console.log("here");
+                productDetails(elem)
+            }
+
+
+        });
+
+
+        function productDetails(elem) {
+
+            //var productPage = JSON.parse(localStorage.getItem("Men's Products"));
+
+            var productPage = [];
+
+            productPage.push(elem);
+            console.log(productPage)
+            localStorage.setItem("productDetails", JSON.stringify(productPage));
+
+            window.location.href = "http://127.0.0.1:5500/womensproductpage/Womentsproductdetials.html";
+        }
+
+
+    }
+
+</script>

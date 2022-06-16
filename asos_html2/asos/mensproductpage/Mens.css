@@ -1,0 +1,324 @@
+body{
+    margin: 0px;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: #2d2d2d;
+    font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+  
+}
+.left{
+    display: flex;
+   
+}
+.left>.logo{
+    width: 200px;
+    height: 78px;
+    border: 1px solid rgb(94, 93, 93);
+    text-align: center;
+    font-size: 30px;
+    background-color: #2d2d2d;
+}
+.left>.logo:hover{
+    cursor: pointer;
+    background-color: #525050;
+ }
+.logo>h1{
+    margin-top: 0px;
+    font-family: futura-pt, sans-serif;
+    color: white;
+}
+.left>.women{
+    width: 150px;
+    height: 80px;
+    border: 1px solid transparent;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.alink1{
+    color: whitesmoke;
+   text-decoration: solid;
+}
+.left>.women:hover{
+   cursor: pointer;
+   background-color: #525050;
+}
+.left>.men{
+    width: 150px;
+    height: 80px;
+    border: 1px solid transparent;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #525050;
+}
+.left>.men:hover{
+    cursor: pointer;
+    background-color: #525050;
+ }
+
+.middle>input{
+    padding: 15px 280px;
+    border-radius: 30px;
+    margin-left: 8px;
+    margin-top: 15px;
+
+}
+.right{
+    width: 400px;
+    /* background-color: red; */
+    display: flex;
+}
+.right>i{
+   padding: 15px;
+   font-size: 30px;
+   margin-left: 10px;
+   margin-top: 10px;
+   color: white;
+}
+.right>i:hover{
+    cursor: pointer;
+}
+.header2{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color:#525050 ;
+    font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+}
+.header2>button{
+     padding: 15px 20px;
+     background-color:#525050 ;
+     border: transparent;
+     color: whitesmoke;
+     font-weight: bold;
+}
+.header2>button:hover{
+    background-color: whitesmoke;
+    color: black;
+
+    
+}
+.header2>button:nth-child(1){
+   margin-left: 25px;
+   background-color:#d01345 ;
+}
+.header2>button:nth-child(10){
+    background-color: #d01345;
+ }
+ .header3{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    text-align: center;
+    font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+}
+.header3:hover{
+    cursor: pointer;
+}
+.header3>div:nth-child(1){
+    width: 50%;
+    background-color:  #26e066;
+    font-size: 13px;
+    font-weight: bold;   
+}
+.header3>div:nth-child(1)>p:nth-child(1){
+   margin-top: 2px;
+}
+.header3>div:nth-child(2){
+    width: 50%;
+    background-color:  #9447ff;  
+    font-weight: bold;
+    color: white;
+}
+.header3>div:nth-child(2)>p:nth-child(1){
+    margin-top: 5px;
+ }
+ .header4{
+     width: 100%;
+     height: 200px;
+     border: 1px solid white;
+     background-color: #5fec46;
+     font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+ }
+ .header4>div{
+    width: 700px;
+    height: 100%;
+    margin: auto;
+    text-align: center; 
+    font-size: 17px;
+    font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+}
+.header4:hover{
+  cursor: pointer;
+}
+.contant{
+    width: 95%;
+    height: 700px;
+    margin: auto;
+    margin-top: 50px;
+    background-image: url(https://media.istockphoto.com/photos/stylish-business-clothing-for-businessman-picture-id504742864?b=1&k=20&m=504742864&s=170667a&w=0&h=zCj1Rx6ZP3a6bIoioKlJRjw7PH-Sw17quQ3Ro20PkIU=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+}
+.contant>div>button{
+    padding: 22px 70px;
+   margin-left: 600px;
+   margin-top: 600px;
+   font-size: 20px;
+   border: 3px solid black;
+}
+.contant>div>button:hover{
+   cursor: pointer;
+   color: white;
+   background-color:black ;
+}
+.contant2{
+    width: 95%;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+}
+.contant2>div{
+    width: 330px;
+    height: 100%;
+    margin-left: 20px;
+    text-align: center;
+}
+.img{
+   width: 100%;
+   height: 80%;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.img:hover{
+ cursor: pointer;
+ }
+.p{
+    font-size: 20px;
+}
+.contant3{
+    width: 100%;
+    height: 150px;
+    border: 1px solid transparent;
+    margin-top: 80px;
+    text-align: center;
+    background-color:#9447ff ;
+    font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+}
+.contant3>div{
+    width: 500px;
+    height: 100%;
+    margin: auto;
+    color: white;
+}
+.contant4{
+    width: 80%;
+    height: 950px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+}
+.contant4>div{
+    width: 45%;
+    height: 100%;
+    text-align: center;
+   
+}
+.c4img{
+    width: 100%;
+    height: 80%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.c4img:hover{
+  cursor: pointer;
+}
+.cp1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.cb1{
+    padding: 20px 45px;
+    color: black;
+    background-color: red;
+    border: 3px solid black;
+    font-size: 20px;
+}
+.cb1:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.cb2{
+    padding: 20px 45px;
+    color: black;
+    background-color: #ffa300;
+    border: 3px solid black;
+    font-size: 20px;
+}
+.cb2:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.contant5{
+    width: 100%;
+    height: 250px;
+    border: 1px solid transparent;
+    margin-top: 50px;
+    text-align: center;
+    font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+}
+.brandnames{
+    display: flex;
+}
+.brandnames>div{
+    width: 180px;
+    height: 120px;
+    border: 1px solid transparent;
+    margin: 30px;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+}
+.logo:hover{
+   cursor: pointer;
+}
+.footer{
+    width: 100%;
+    height: 250px;
+    margin-top: 60px;
+    display: flex;
+    background-color: #eeeeee;
+}
+.footer>div{
+    width: 25%;
+    height: 100%;
+
+}
+.footer>div>h3{
+    color:  #666666;
+    margin-left: 10px;
+}
+.footp{
+    color:#464141 ;
+    margin-left: 10px;
+    }
+.footp:hover{
+    cursor: pointer;
+    color: blue;
+}
+.alink2{
+    text-decoration: unset;
+}
+
+

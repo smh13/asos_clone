@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkoutpage</title>
+    <style>
+        body{
+            margin: 0px;
+            font-family: futura-pt, FuturaStd, Helvetica, Arial, sans-serif;
+            background-color: #f6f6f6;
+        }
+        .container{
+            width: 50%;
+            height: 150px;
+            border: 1px solid transparent;
+            margin: auto;
+            margin-top: -40px;
+            background-color: white;
+        }
+        
+        .head{
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            margin: auto;
+        }
+        .h1{
+            font-size: 70px;
+            margin-top: 0px;
+            margin-left: 10px;
+            
+        }
+        .h2{
+            font-size: 40px;
+            margin-top: 20px;
+        }
+        .select{
+            width: 350px;
+            height: 50px;
+            margin-left: 40px;
+        }
+        .b1{
+            width: 90px;
+            height: 50px;
+            margin-left: 10px;
+        }
+        .img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            margin-left: 50px;
+        
+        }
+        .div{
+            display: flex;
+        }
+        .h3{
+            margin-left: 50px;
+        }
+        .container2{
+            width: 50%;
+            height: 150px;
+            border: 1px solid transparent;
+            margin: auto;
+            margin-top: 15px;
+            background-color: white;
+        }
+        .promo2{
+            width: 350px;
+            height: 40px;
+            margin-left: 50px;
+        }
+        .b2{
+            width: 200px;
+            height: 50px;
+            background-color: black; 
+            color: white;
+            font-size: 20px;
+        }
+        .promo1{
+            margin-left: 50px;
+            
+        }
+        .add{
+            width: 50%;
+            height: 800px;
+            border: 1px solid transparent;
+            margin: auto;
+            margin-top: 15px;
+            background-color: white;
+        }
+        .head1{
+            width: 70%;
+            display: flex;
+            margin-left: 50px;
+            justify-content: space-between;
+            margin: left;
+        }
+        .b3{
+            width: 90px;
+            height: 30px;
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        .form>label{
+            font-size: 22px;
+            margin-left: 50px;
+        }
+        .form>input{
+            width: 350px;
+            height: 40px;
+            margin-left: 50px;
+        }
+        .select1{
+            width: 350px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .payment{
+            width: 50%;
+            height: 400px;
+            border: 1px solid transparent;
+            margin: auto;
+            margin-top: 15px;
+            background-color: white;
+        }
+        .pinput{
+            width: 250px;
+            height: 80px;
+            margin-left: 50PX;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgba(238, 238, 238, 0.815);
+        }
+        .pinput1{
+            width: 250px;
+            height: 80px;
+            margin-left: 50PX;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgba(238, 238, 238, 0.815);
+        }
+       .or{
+           margin-left: 150px;
+           color: gray;
+       }
+       .foot{
+           width: 100%;
+           height: 80px;
+           display: flex;
+       }
+       .logoimg{
+           width: 250px;
+           height: 80px;
+           margin-left: 40px;
+           margin-top: 30px;
+       }
+       .logoh3{
+           margin-top:40px ;
+           margin-left: 50px;
+       }
+       .b4{
+           width: 700px;
+           height: 65px;
+           margin-left: 400px;
+           margin-top: 20px;
+           font-size: 20px;
+           background-color: rgb(0, 139, 81);
+           color: white;
+           font-weight: bold;
+       }
+       .terms{
+        width: 500px;
+        height: 150px;
+        margin: auto;
+        margin-top: 10px;
+        color: gray;
+        line-height: 25px;
+       }
+       .footer{
+           width: 100%;
+           height: 100px;
+           margin-top: 30px;
+           background-color: white;
+           text-align: center;
+       }
+      
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1 class="h1">asos</h1>
+        <h2 class="h2">Checkout</h2>
+    </div>
+    <div class="container">
+           <div><h2 class="h3">DELIVERY COUNTRY:</h1></div>
+            <div class="div">
+                <img class="img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAmVBMVEX/mTMSiAf/////lycAgQAAAIgAAIUAAH4AAIIAAIMAAHwAAHPi4u+kpMvz8/kAAHjn5/Lt7fXd3ey5uddPT6GZmcWDg7n6+v7Ly+HIyOJERJxlZao+PponJ5L29vy0tNbW1uggIJCfn8iGhrsYGJBNTaB2drQQEIx+fripqc5ra62QkMBXV6QiIpFfX6i+vtwyMpw6Opg1NZe0gadDAAAEvUlEQVR4nO3ba3OiSBiG4UzvdDcip8YDiAdQZAIxExP//4/btzHjZH1Nze6HpVPlc1Ul0eiH9g7Q2JKHBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA/+gvuPYg4BqacGjCoQmHJhyacF+hSTI5LFd7uV8tD5PE9WDEF2gSHNbaGyklpVRq5Omfh8D1kBw3qaZ6pCiGVFrr/oYc6SZ3OyinTZIpdZCeevnhNyY1jf/jRXm0vejG6S7kssnObhmeNxMbcTSiEuZIt2aeZ7eancNxOWzy7NFrn3cnI/p9pbTfcmFO3ZxaeVN3A3PWJNrS5lAEmb3d5wgvt7KgoMe2kauhuWoSPdK2QHvIwt5ZpPTtQF/p+S7tVbQNPbqK4qhJRluJ17VGZB3di2yPF/o62AxdJkzbUZRt5mZwjpo0lOTY3wrtFGMPHq/vP5N+JxJHiuLomOKmycyTXinOUewLX1IYSTmW7/cpiSjpOTMno3PSJNA049TnQ4gIae8J6cVrSkWbSNdvJvRITbOPdnJO66RJo1QzM3RjaY8YMhLVVmR+JraViGhzEZn9vZnZp7kYnosmCy31+UR180oH1a4QWWyiODJxJhqajaPTpn80oee5OM130WSlVL3pZ11hJO0daiLWITUJ12KiaM+Spn9ssamVKhyMz0GTVNsDrOi6/o5fiVKLdmVis2qFLkXl27OV/rhCh1mdDj9AB01qmoftnz+Z2ir5+Cjk08JP49RfPElxHNvdpZvao2vhyVE9/AAdNHmkOfZ8ihpK2l4m4y4fJ7ryKp2M8248oe1D7vrHDc3Z++EHOHwTmojlr9tRISciHB/beZ3v87puj+OdmMiV+fUE6WI6Hr5J6amnaFEuzptK6av8GAfrKmzDah3Ex/zR798Iik1e5tGT8srBRzh8k7lSLf1ID9NlWNF5yHLcBuugLd6KNl0H87E9N0m7p+Zgj66tUvPBRzh8k2cl/fNZRzLbxut2kczXaWFXIEdFsG6TfH6KH2fnPSb3pXoefITDN3lVanpZBTDhytd12o6kNWrTg/ZPu8vKYzRV6nXwEQ7fRErvkiSLIpNWeViovokqdnmVmii6LBJE3u8D8mCcNEmqYzhbnqT2/TiOvX37Js/e6q1Hv4l9LX8+H8IyT++mCbaTK1fHkzccTz7OO8Hveafp550mWM/vct6Zn085cH7ywe3z2JTOY9O7PY/F+50b9vS++PyiP3tfPLm398WiHv15/aTs109Wd7N+gnW2G4p/uR6b3c96rMiv1u2bT9btgztat+8/3zmY989xbn6+I+7t8x18DngLPi++YYrrChhcf3IDrlO6IdqOpCpSXM/2D/11j234yXWPwy+bXOD6WO5rXkc9vdvrqAWut78N/5dx08f/3zF/fvr/7is0+WrQhEMTDk04NOHQhHv4DtcevsE1NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMT7m/cNifkUwM0UQAAAABJRU5ErkJggg==" alt="">
+                <select name="" class="select">
+                    <option value="">India</option>
+                    <option value="">India</option>
+                    <option value="">Aland Island</option>
+                    <option value="">France</option>
+                    <option value="">Russia</option>
+                    <option value="">Austrilia</option>
+                    <option value="">Belgium</option>
+                    <option value="">Vietnam</option>
+                    <option value="">IceLand</option>
+                    <option value="">Egypt</option>
+                    <option value="">Hong Kong</option>
+                    <option value="">Mexico</option>
+                </select>
+                <button class="b1">Cancel</button>
+            </div>
+    </div>
+    <div class="container2">
+        <div class="promo1"><h4>PROMO/STUDENT CODE OR VOUCHERS</h4></div>
+        <div>
+            <input class="promo2" type="text" name="" id="">
+            <button class="b2">APPLY CODE</button>
+        </div>
+    </div>
+    <div class="add">
+        <div><h2 class="h3">DELIVERY ADDRESS</h2></div>
+        <div class="head1">
+            <h3>ADD ADDRESS</h3>
+            <button class="b3">Cancel</button>
+        </div>
+        <div>
+            <form class="form" action="">
+                <label for="">FIRST NAME:</label>
+                <br>
+                <input type="text" name="" id="">
+                <br>
+                <br>
+                <label for="">LAST NAME:</label>
+                <br>
+                <input type="text" name="" id="">
+                <br>
+                <br>
+                <label for="">MOBILE</label>
+                <br>
+                <input type="text" name="" id="">
+                <br>
+                <br>
+                <label for="ADDRESS:"></label>
+                <br>
+                <input type="text" name="" placeholder="Optional" id="">
+                <br>
+                <br>
+                <label for="">CITY:</label>
+                <br>
+                <input type="text" name="" id="">
+                <br>
+                <br>
+                <label for="">POSTCODE:</label>
+                <br>
+                <input type="text" name="" id="">
+                <br>
+                <br>
+                <label for="">COUNTRY</label>
+                <br>
+                <select name="" class="select1">
+                    <option value="">India</option>
+                    <option value="">India</option>
+                    <option value="">Aland Island</option>
+                    <option value="">France</option>
+                    <option value="">Russia</option>
+                    <option value="">Austrilia</option>
+                    <option value="">Belgium</option>
+                    <option value="">Vietnam</option>
+                    <option value="">IceLand</option>
+                    <option value="">Egypt</option>
+                    <option value="">Hong Kong</option>
+                    <option value="">Mexico</option>
+                </select>
+            </form>
+        </div>
+    </div>
+   <div class="payment">
+      <div><h2 class="h3">PAYMENT TYPE</h2></div>
+      <div>
+          <input class="pinput" type="button" value="ADD CREDIT/DEBIT CARD" id="">
+      </div>
+      <div><h3 class="or">OR</h3></div>
+      <div>
+        <input class="pinput1" type="button" value="PAYPAL" id="">
+    </div>
+    <div class="foot">
+        <h3 class="logoh3">WE ACCEPT:</h3>
+        <img class="logoimg" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxQQEhMPEhMSFhMQFRURFxUYDxIVHRYZFxcXFxYWGBUYHSgiHhonHhYVITEhJSorLi8wFyEzODUtNyktLisBCgoKDg0OGxAQGy4mHiUtLS8rKy01Ky8tKy0tLy0tLS0tLS0wLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABAUDBgcBAgj/xABIEAACAgECAwIFEAgGAQUAAAABAgADEQQSBSExBhMiQVFhkwcUFRYyUlNxgZGSobGy0dIjMzRCYmNycyR0gpSzwUMXg6Lh8f/EABsBAQADAQEBAQAAAAAAAAAAAAACAwQBBQYH/8QANBEAAgECAgYJBQACAwEAAAAAAAECAxEEIRITMVFhkQVBUnGBocHR4RQiMrHwQmIzgvEj/9oADAMBAAIRAxEAPwDtMREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBEj8R1PdVWW4z3SPZjy7VJx9Ug6Xgauive1lljgMzd9aoyRkhUVgFUeIAfHk85JJWuzhbYjEg+17T+9f/AHF/549r2n96/wDuL/zzn273y+RmTsRiQfa9p/ev/uL/AM8e17T+9f8A3F/54+3e+XyMydiMSD7XtP71/wDcX/nj2vUe9f8A3F/54+3e+XyMydEo+K6BdJU2qoNitQO8ZTdY62IObIVdiMkZwwwQcc8ZEvDDSWaAjEouFcOXV1rqr2sZrx3iqLrUWtG5ogRGAJC4yxySc+LlKftLxPh2hOx+9ez4NNTcSP6ibMD7Ylox2stpUqlWWhTTb3I3XEYnGbO31O7wdG+3z6/U5+qbF2f7T8O1RFbpbS7YA36q4qSfEHD8vlAlUa1KWSl5Gyr0VjKcdKVN24Wf6OiYjE1viFOjpO3bYzeRdTfy+M75V+uqM/qHx/nNR+aZ63SOEoy0Zzz7m/0UU8HXqLSjHI3jETWeH16O4hStqsegOpvwfiO+WGp7OqF3UNbVaoJRu/uYZ8QdGYqy+UEfFiaaNalWjpU5XRTUpzpvRmrMtokXhWs7+mq/GO+rSzHk3KDj65gopFxd7CxAdkVQ7KAFJUk7SMkkeOdnJp2SzORSebZYxI3sdV5D6Wz8089jqvIfS2fmnLz3Ln8HbQ3vl8kqJG9jqvIfS2fmj2Oq8h9LZ+aLz3Ln8C0N75fJJiRvY6ryH0tn5o9jqvIfS2fmi89y5/AtDe+XySYkb2Oq8h9LZ+aY9KDXYatxKFd65JJXBwVyeZHMHn55zSknmvP4Q0YvY/L5ZNiQeNas1V7l6lgufJnJz9U1z2Vs9+30jNVOhKoroyVcVCk9Fm4xNO9lbPft9Ix7K2e/b6Rln0c+BV9fS4m4xNO9lbPft9Ix7K2e/b6Rj6OfAfX0uJuMTT/ZWz37fSM89lbPft9Ix9HPgPr6XE3GJrnBuKO1q1sxYPkc/EQpbOfkmxiUVKbg7M00qsasdKJX9ov2XU/2LfuNMuo1L1VB1QMqoGPhYIAXJOMTF2i/ZdT/AGLfuNLGlQa1B6FQD80hOLlTsm1ntXzkWp2le1yv4HxhdUCQAMAEYbcCD0IM1o+qFv4l7F06ffizuzb3uANq7rG27ei4I69RNI7M9oDwfV8Q0lhzXSt/dAn94ENWo8zAiS/Ug0BSrW8Xt5sq2IrEdSB3lr5852j5DNmHwUqFKbxD0rfi9mlpfi7b0tq2XuV1asZSWrVt63W2+ZtnZjt/6+1t2jFGxKRaxt73PKt9oO3HLOc9ZUcU9Vwd61Wi0j6gISN+WG7HUqqqTt85xKT1D+H9+de758OpKS3j/S94Xx5+Q+eVo02v7N3taqK9NhCF9uUsAJKgkc0br9fWbvpaCrSppK6Ssm7Jvv5FGslop82db7EdpG4hp21FlJoKWNWVLE+5CktzAIHMjn5JqlPqu1vq00y6c909y0i02jozhBZtx055xnpMvant0lnB/XVQ2WazOnC55q3S3mOuFDYPnE5ZxPhtdGi0OprtqN7ta9irYpZOamncoORgKevjaQw2EpzcnUja7cYrPJ2v8LidnUask+8/Q/az9i1X9mz7pk5vHKbi2rF/C7Lh0t0pf6VeZct455bVo24v0NC2mk8W7QnQ8J0zIf01tNddfm8Abn+QfXicWtcsSzFiWJJJ5kk8ySZ1TUVLZZwgWgNTTo31DKwBBC1ZOQeWOSyfxHgVPdXItFLO+oVm9zVsQg2bBZtJQCpFJwP3ukx4ijKrNu+SufR9G46hg6UYuN5Tzby2Xat4JX6tpxiTuF6cO2WZlC88iprMnyED/udA9rOh3qqIGuu06airT+vHVbCWffsuKbmOxcgFR08XUTKuF0VrggUjS6fTG3/EGlbLLx1dwhIKhTz/AHiwHLEyzwdZxei1f+4M9OfTtBr7VLy9/jjttXcG1wfNZdnYeFk0NXy5cuYxLSZuGaLTi3Tr3ltnrm3UGsm3wWqpzyI8ZyMfOZOpZ7mzbXT3e9UHNqSpc4Cjajb+XTOPjnh1uh5qajpJOWxZ2y25pJLbllmYamPp3coxdlteS3rJO180Vc3DszxE2o1bnLVjkfKv/wBSpGiqHglWJA1NvJ8ZSmzYo+M5HPzGTODYV6AqMm+l7GVjlhvO7aTgZx0HmxNOAwVfB1lOTVnZNLO93byfsYsViKeIpuMU8rtPZsV/NEzsr+xaT/L0/cWKtR3dN1mM7GvfHl2s5x9UdlP2LSf5en7izEK99Vtecb2vTOM43Mwzj5Z9JU/5F4njx/B+Hqa3w/t3f3enu1OlRKtchaiyu8uN/dmxa7FKgqSFPMZHKY+H9v7b7dNUtOnr7+ii897qWrL977paPBIfaPL16T3h/Yh1SirUas3V6OspQi6YVKrFDWLH8Ni7AE45jrI+q7GuaadFZrk9bUJSSraWsOBRty1dm/KKSFzyOMnnzk8iGZdaDtJqtW7PpdNUdJXcaTZZqCj2BH2WvWgUjAwcbiM4lseLOcutYNYPXdgkeWatpdINLYyabienr0z3Na1DrVYyndvuSuzvBtB55BB25Mvb1rrBU6hEr5kgsoxgjIyW8W5fF+8JnxGsy1fp4bTTh9Ur6zzv47Osr7+3Pd165rKgLdG6LXWGJ79bto07Dly3MSp642mR6e29p1j6J00aNUalYNq2DuWrFjiqvb4WDkdR0nvEuCaTUa3Sazv6gdMgJqFiEWqCe4Y+F0VySDg5MyU9n7PXV+sp1VJq1bI7odIthwibMJd3nLoeYEvWzMzvbkfPY7t2+ttpqspqX1xQ2pU16g2FArBStqlRtJzym3Kc3j+0fvrNG4N2dTg5rsS8H9D3N1fcgeuGU5S0eF4DDoTzyJddlNa199ruf3AAPEBu6CZK2KpqtGis5N8uvP2NVChN05VepLn3E7ti+KAf5i/Y01HS5sbYuM4JJJwAAMkk+SbR2+bGlB/jT7GmocI11KJZ3jMGfC+CmfBHNgCTyJIA8fIT6HBp6htLO58r0jJfVKMnZWXqWp4ZZhSGrPeAlAH5vt67eXWeHh7DOXr5NsI3nk3XbyHXkfmnzpuKVOcCy3e2SiireyWMVYkMpG4ZUnAA6mSbtqjcBqFwytltJbzIUoSSrA5JbPXxyWlUTs/0VqNKSvH9/wB/5Ywnh7A7d9eTjlvP73TxePInp4a+QN9XMEj9J4gSCenmPzSWzAksU1eWNZ/Z7toKBBzQsd2dp69OU+dxAZFXUhXAV/8ABPkgOzYVt3g8mwcgyOsqfyLHSp7vPkRl4W52Yev9KSE/Se6I6gcpD1tbUkBip3AkFTkciVP1gyzqGeb16rmGIX1sxKM+zLBxgcigPQSo46j7ayEtK1qQzNp3QZLs3Q5x7ryy2lKTkk3/AH9YprwjGm5JZ893y+CWdid2auzqqR53/wCN5v05j2PtzrKB57P+J506YukI2qpcPc9LoielQb/2f6RX9ov2XU/2LfuNLLTe4X+lfskHjNJs099ajLPVYoHlJUgCZuF6pbaq7EOVKj5DjmCPER0IPSY3+Pj6Hp9ZzH1RvU51Ot1rarTCrbaib91m071G3OMH90L8023Vdm3q4S3DtNtNpo7oEttBZsd4xOPOxm3YiXyxdSUYweyOz5IqnFNvect4D2K12k4bfp6nrr1lt6WBhcQAibOW8L1ODyxjnKvX9keO61Rp9XqKzSGBO568cuhxWgLHzGdmiWLH1FJytG7d72V/A5qla2Zx7jnqaamxtLpaSnrPTKAXazDMzvuvs2YPPoAP4ZL7Q+o/SKGOiaw35XaLLRtIyN2SF8mZ1aJxdIV1a0tnn37xqYbjS9FoLtNwV9NqNve06e1DtbcNo3bOf9O2bY3jlb2rcetba/371NKL42d/BAA+s+QAmWhEonJyWk+tt/oklY5t2p4bY/CtLqaCQ1Ol7p8Yy1FqILB8XgqfizOdr2m1YbeL7A2/vc/xbO7yeXPwOWDyneeybKdJVV+9Qg09inqr1jYykfJ8oIPjmkdq/Uv3sbtGVG45NLHA/wBDeTzHy9ZixMamk3BvuPoOicZhYx1WJiuEmr+D9DQj2u1uCPXL+ENp9znGMYDbcjqehk7gfaXUm3wrb2s2LUm2xF8FcnawYYbzE8+vlmKzsDxAHb62f5HQj5w2JsPZ31LbnZX1TCpRglFYM583jC/HzmNqvNaKcubParS6MhBt6Hgk35fB7pK3tdbLVvVqCxrZrlypdtzFSnQ5+2XXru3JbvrtxCgnf12klTgDGeZ6dfHLvVdku7AGnxsUYCE9PiP4yu9hNRnHdN84+3M8LELpGnNq8/8Aq5NPk2eYquErJP7e52VuZB7xwUcWWBq87WDcwGOWXzqfIfJNm7Ko7brbGZsLtUtzJ8p3Y82Ji4d2YJIa44HvQck/GfFL/WaivTUs7YWutT9Q5ADxk9APHPR6MwmKlNVK8nZZqLbd3vavkefjcRQ0dCklfetxA7KfsWk/y9P3FmGhvd/3LfvtJfZ/TtVpdPU4w1dNaMPIQgBErg217EPIh3bHmZiQR5uc96o1rF4nnRX2S8CXvlVxngqao5ZmVhW9SsvIrvK5IPxDBHQgyZvhrQOpx8slcrIGk4GicixZe8tswV696HDKeZ5eGemJG0nZaurwkss7wFWVm8PDDO5ip67sjP8ASuMYk6/i1SdXHxDwvslZqe0o6Vpnzt+AmWrjcPS/Ka7lm/I10sDiKv4wfe8l5nmo7IVPvZ7bP0qFLOe0EFzYxUA+ASWIyOg5TPdxtaK1prPeMihN5UAcuQ5LyJ+LAmv6ziNlvu2JHk6D5pG3TxcT0zKX20Vbi9vx5nsYfoZR+6q78Fs+fIkajUNYxdyST4zNi7BH9LZ/QPvTVd02zsDUd9tmPB2hc+fOcTH0deWLg9rv6M1dIQUcLPqy9UTfVEP+EH9xPsacz3zpXqjA+s8+SxCfN1H/AGJy7dP0vo5//LxZ+ZdKU9Kvfgi57O3BdTUWIADHmTgDwT1JmwaZwlagW11WKFHfd5Vy5YYYRmL7iRzI5dZo26N0vqUlOV7majJ042sb7RZUlilrEr32Jt2stjKFVc7rd/JCwbqDnPnmNaNtQAspLGtVYCytfCD1Mckvh+W7ny6HyzRt0bpX9Mu15Fuu/wBfN9Z0DUOm1Cpr3Lu8Fm04QZIILKLOXTqMnEjcWvRUv8NCLA+CXrZ2YuGUKUYkryPUDAAmkbo3RHDJPb5cbiVdtbPPhbcbH2Jb/HUf+5/xvOrTkvYQE66nHi7wnzDu3H2kfPOtTz+kf+Xw9z0ui46NFri/Qx6i4VqztyVQSfklO3B+9JtOmoUv4Ry7hj532ADd8/xydxz9Q/8Ap+8stRMsXoq6Nr+6VuC9fY1v2vfydP6W+Pa9/J0/pb5skTuukd1S3v8AvA1v2vfydP6W+Pa9/J0/pb5skRrpDVLezW/a9/J0/pb49r/8mj0t82SI10hq1vZrleiGlPfnT04UYNiMzOinqRvGdvlAPi8cumYAZ8QGcz54p+ot/tv90zD/AOFf6E/6kKsrwcuvMQTUtG+RF1PCK7m71qa9xAG47gxA6BiuOnkJOMz59rlXwaeku/GZtX2i0tVy6azU0Jc+AK2uQMd3ufBJ8fijUdotLW/dPqaFsDrUUa5AwdhlVIJzkgg4kEmv8nzLbmH2uVfBp6S78Y9rlXwaeku/GStNx3TWLZYmopZKCRYwtQisjrvOeXyzDpe0uktqe+vVadqqf1lguQqmem455fLGfafNi5j9rlXwaeku/GPa5V8GnpLvxmXTdpNHallteq07V0gGx1vrKoD03MDgdPHPqvj+latbxqKDVYwrWzvk2s56IGzjd5oz7T5sXMHtcq+DT0l34xVwOqthYKKmZDuByzFT5V35wfiwZO4ZxSnUp3mntrtTJXcjq4yOoyPHJmY+7tPmLmJGBAI6HmJi1GkSzG9FbHTKg4nuk9wPl+0zLOR+6Kudu4vIh+xNPwSfRE8bg9B601n/AECTYnNVT7K5EtbPtPmyD7DUfAVfQEew2n+Aq+gJOic1NPsrkvY7r6vafN+5B9htP8BV9AR7Daf4Cr6Ak6I1NPsrkvYa+r2nzfuQfYbT/AVfQEl00qgCqoVR0AAA+YT7iSjThHOKS8ERlUnL8m34s+L6VdSjqGVhgqRkEecSoPZLR/AJ87fjLqJYpyjsZU4xe1FL7U9H8Avzt+Me1PR/AL87fjLqJ3Wz7T5v3OauG5ckUvtT0fwC/O34x7U9H8Avzt+MuojWz7T5v3GrhuXJFL7U9H8Avzt+Me1PR/AL87fjLqI1s+0+b9xq4blyRB4dwejT5NNSoW5Egcz5snxSdESLbbuySSSsiDxz9Q/+n7yzXvVc4g1HDzsZle2ytAVYqcZ3HBHPov1zYeOfqH/0/eWVvbfsueI11KLNncObQu3Ic4wATnkOvPn1l1JpOLlsu/QpmneVty9Tk3qe8Y1a66nNmoastsdWsdgQ3IcmPXJB+Sdf7ZcfbQ11MgrL33JQveMVUbskszDoAATPeznZ5NPWhsRTcu7LjnjJOME+bAknjfAq9W+ne0krpnawV4Uq5KlRvBHQZzLK9SnKqrbF5kKEaug3LJu2W7+5bih4L2+qdX9dFEdbrKVNQtuWxUxusXapIQZ5seUudL2q0lg3LcMdy2pyUsUd0rFGfLKOQIx5Zg4j2WV7VvptfTkVNpyKkqwUJzgBlO058YlZqew62WaOs4Om0VRQksd93NSK3UDGzK7j5T4pVak+Bb96JOt7VkFmpFbVrXXaN5etn39AqEZzjHIiWlXaKglVLkOxVMbHIDtjwNwGMgnHWZ6OEVrbZcQGa0qfCVTs2jAC8uUiV9nQNo719iWG1UwuAxyeuMnmcyd6DVrW9f58zPbEp3une+T6s8utdXfY+6NcdRpbbSAARaFxnmqllB+XEk/+Ff6E/wCpjbRijSvSpJCVOMnqeRJJ+efR/UD+hf8AqUV7aEtHZmX0VJSSltsr99zkHbjTanUWcRqXS3K41FVla06IEX11kHvrNSQSWx0VSDzxg859druA2XLxy31rY1lj6I0nuGZiAib+7IHPHj2zs+6R7KW61uV8xG5fm8XySucnHNK/78/dF6Se1nK+NcLs09nGfW+hV63r0ASs6UtWwU+Gy1jAdl64HjAzHBvXNF3FNTXpdTf3+n0/c97pEqFjglBmoBQFBOcEZwvPqCeob7h4qj58sPqmPU2siNZfZWlajLEDoPOzdPmlWub2QlfirfvL9vgTcLda/ZyNOA3rw9FOi1Atq11Gu1mRW/rlc2bxWtZO4Lkfo/lmXW8Hs1HfXpprRpdXxXSWJS2nZT3ajbba1WMqh8pAnUKOM6ZACL68WbnBzgHBKnn0yNpBHXkZ7f2n0lbbX1NKtz5FxnkWB+4/0G8hlsHK33bSDtfIpewHDzp9RxVe6Ndb60tWO7KKylBzTlgjPkm55lRd2k0qb92opHdHa/6QeCfD5H0dn0G8hnun7Q6ex2rWwbls7nGDzbaG8HyjDDn0kjhYaT3A+X7TMsw6T3A+X7TM0hT/ABXcjstrEREmcEREAREQBERAEREAREQBERAEREAREQCDxz9Q/wDp+8stZC1un71GrzjcMZ8h6g/PiYE1lyjDUliORZLK9p84DMCPik0tKNlxKm9Gd31r3LSJWPxC3HLTWE/3aR9e6UHEeIcVblRptPWPK9wsP1MB9s7Gm31rmhKrFdT5P2NykPX8TpoGbra6x/E6r9RnM+I8H43qM77sA/updXWP/iR9cpG9TfXE5KISfGbkJ+fM0Rwsf8prmVvE7ovk/Y6BxH1S9FVyVnuPkrr5fScgTWOI+q1YcijTov8AFY5Y/RXA+uUv/ptrveJ6ZPxj/wBNtd7xPTJ+MvjQw8etPxRU69R9T5P2Ims7b67UEK95CMQCiKqDB6jkMn5TO2H9QP6E+wTlfB/Uz1JtU3bErBBJDqxPmAE65ZTlCg5csDzY6TNjdBwUYW69hZhtLTcpXtlt7zzMZmDvscmDA/0sfmIE974fxejf8Ji1kX1mzRZm3SFxrQ+uKLKA2w2rt3Yzt5jniZ+/H8Xo3/Ce9+P4vRv+EayO9c0NFmv3djqcEqWL7bF/SMWUm02GxmAweZuckAgdPIJ9p2PoKIjmxmSsVlt+N2K7a2YgeMi6wnzmXnfj+L0b/hPe/H8Xo3/CNZHeuaGi9xSL2P0w7wBWAtd7CAwGDYLQ/hAZIPfWHBJxnliZvazSXD7reVqXhd4wHRVTIONwBCLnB5/ESJad8P4vRv8AhPO+z7kMT5NrD6yMRrI7zmizPo/cD5ftMyzHRXtUL5B/+zJOwVopMPaIiJI4IiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAns8iAexPIgHsTyIB7PIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAf/Z" alt="">
+        
+    </div>
+   </div>
+  <a href="http://127.0.0.1:5500/checkoutpage/placeorder.html"> <button class="b4">PLACE ORDER</button></a>
+    <div class="terms">
+        <p>
+            By placing your order you agree to our Terms & Conditions, privacy and returns policies . You also consent to some of your data being stored by ASOS, which may be used to make future shopping experiences better for you.
+        </p>
+    </div>
+    <div class="footer"> <p>ASOS Help</p></div>
+</body>
+</html>
